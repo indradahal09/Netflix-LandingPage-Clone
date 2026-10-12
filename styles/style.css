@@ -1,0 +1,263 @@
+body {
+    font-family: Roboto Condensed;
+    padding: 0;
+    margin: 0;
+}
+
+.first-page {
+    background:linear-gradient(rgba(0, 0, 0, 0.7)), url('https://assets.nflxext.com/ffe/siteui/vlv3/f0b42cac-9ced-425f-8677-777eadbdbe2f/web/NP-en-20261005-TRIFECTA-perspective_d428cb62-ea4b-4ccc-9cc8-6c0b471c2b37_large.jpg');
+    height: 620px;
+    margin-top: -35px;
+    padding: 20px;
+    border-bottom: 20%;
+    z-index: 90;
+}
+
+
+
+/* .header-div, .netflix-logo, .sign-in-button,.body-div,.bold-line,.plan-text, .random-texts,.email-input, .get-started-button {
+    filter: brightness(100%);
+} */
+
+.header-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 130px;
+    margin-right: 130px;
+    margin-top: 40px;
+    background-color: none;
+}
+
+.netflix-logo {
+    height: 40px;
+}
+
+.sign-in-button {
+    padding: 9px 18px;
+    background-color: red;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: cursor 0.2s, background-color 0.2s;
+}
+
+.sign-in-button:hover {
+    cursor: pointer;
+    background-color: rgb(199, 23, 23);
+}
+
+.body-div {
+    color: white;
+    display: flex;
+    margin-top: 60px;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    gap: 5px;
+}
+
+.bold-line {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.plan-text {
+    margin-top: -70px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.random-texts {
+    margin-top: -15px;
+    font-size: 18px;
+}
+
+.email-input {
+    padding: 16px;
+    height: 20px;
+    width: 320.75px;
+    background-color: rgb(65, 64, 64);
+    color: rgb(240, 238, 238);
+    font-size: 15px;
+    border: 1px solid rgb(179, 176, 176);
+    font-weight: bold;
+    border-radius: 4px;
+    transition: transform 2s, font-size 0.3s;
+}
+
+.email-input:focus::placeholder {
+    transform: translate(-3% ,-160%);
+    font-size: 11px;
+}
+
+.get-started-button {
+    background-color: red;
+    font-weight: bold;
+    color: white;
+    border: none;
+    height: 55px;
+    width: 190.25px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 25px;
+    transition: background-color 0.2s, cursor 0.2s;
+}
+
+.get-started-button:hover {
+    background-color: rgb(199, 23, 23);
+    cursor: pointer;
+}
+
+.greater-than-icon {
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.second-page {
+    background-color: black;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 100;
+    border-top: solid red 2px;
+}
+
+.trending-videos-div {
+    height: 400px;
+    width: 1000px;
+    margin-top: 50px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.trending-now-div {
+    font-size: 25px;
+    color: white
+}
+
+.trending-movies {
+   
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    overflow: scroll;
+}
+
+.trending-movies::-webkit-scrollbar {
+    display: none;
+}
+
+.trending-movies div {
+    height: 230px;
+    width: 200px;
+    margin-left: 20px;
+    position: relative;
+    padding: 10px;
+}
+
+.trending-movies div img {
+    border-radius: 10px;
+    height: 200px;
+}
+
+.trending-movies div div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+    height: 20px;
+    width: 20px;
+    z-index: 100;
+    left: -30px;
+    bottom: 80px;
+    font-size: 100px;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke: 1px white;
+}
+
+.trending-movies div img:hover, .trending-movies div div:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.third-page {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    margin-top: -20px;
+    height: 600px;
+}
+
+.trump-cards {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards-line {
+    display: flex;
+    flex-direction: row;
+}
+
+.cards-line div {
+    width: 300px;
+    background: linear-gradient( rgb(71, 42, 102));
+    margin-left: 10px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 4px;
+}
+
+.cards-line div p {
+    color: lightgray;
+    font-size: 16px;
+    line-height: 26px;
+    margin-right: 14px;
+}
+
+.footer-section {
+    display: grid;
+    grid-template-rows: 50px 300px;
+    align-items: center;
+    background-color: black;
+    padding: 50px;
+    margin-top: -40px;
+    padding-left: 80px;
+}
+
+.footer-section div {
+    height: 100%;
+}
+
+.four-columns {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+
+}
+
+.four-columns div {
+    display: grid;
+    grid-template-rows: 40px 40px 40px 40px;
+    padding: 20px;
+}
+
+.questions {
+    padding: 40px;
+}
+
+.four-columns div a, .questions {
+    color: rgb(185, 185, 185);
+}
